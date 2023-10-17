@@ -4,7 +4,8 @@
 ### INTRODUCTION
 This repository contains the datasource, an EDA SQL script, a data cleaning SQL script and an interactive Tableau workbook for visulization.
 ### REQUIREMENTS
-**Initial requirements**: Clients want to create a UK Road Crash dashboard for the years from 2019 to 2022 so that they can have the following insights with the hope that they can minimize the loss of lives.
+**Initial requirements**: 
+Clients want to create a UK Road Crash dashboard for the years from 2019 to 2022 so that they can have the following insights with the hope that they can minimize the loss of lives.
 📌 Total Casualties took place after the accident.
 📌 Total Casualties & percentage of total with respect to accident severity and maximum casualties by type of vehicle.
 📌 Total Casualties with respect to vehicle type.
