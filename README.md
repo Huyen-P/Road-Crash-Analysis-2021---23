@@ -3,11 +3,11 @@
 **Period of time: from 2019 to 2022**
 
 ### 01 - INTRODUCTION
-This repository contains the datasource, an EDA SQL script, a data cleaning SQL script and an interactive Tableau workbook for visulization.
+- This repository contains the datasource, an EDA SQL script, a data cleaning SQL script and an interactive Tableau workbook for visulization.
 
-The datasource has **307.973 rows** and **19 columns**.
+- The datasource has **307.973 rows** and **19 columns**.
 
-Link to the [Tableau dashboard](https://public.tableau.com/app/profile/huyen.phan5825/viz/RoadAccidentDashboard_16962422435460/Dashboard1)
+- Link to the [Tableau dashboard](https://public.tableau.com/app/profile/huyen.phan5825/viz/RoadAccidentDashboard_16962422435460/Dashboard1)
 
 ### 02- REQUIREMENTS
 **Initial requirements**: 
@@ -29,9 +29,9 @@ Clients want to create a UK Road Crash dashboard for the years from 2019 to 2022
 📌 Relation between Casualties by Area/ Location & by Day/ Night.
 
 ### 03 - TOOL USED
-📌 **SQL Microsoft Server** for EDA and Data Cleaning Process.
+- **SQL Microsoft Server** for EDA and Data Cleaning Process.
 
-📌 **Tableau Desktop** for Data Visualization in parallel with Data Analysis.
+- **Tableau Desktop** for Data Visualization in parallel with Data Analysis.
 
 ### 04 - STEPS
 **EDA**
@@ -57,7 +57,6 @@ Finally, I translate all the insights into an interactive Tableau Public dashboa
 ### 05 - Insights from SQL query (following to the KPIs)
 ✅ The **Total Casualties** occurring post the accident amount to **417883**.
 ![total_casualties](https://github.com/Huyen-P/UK-Road-Crash-Analysis-2019-2022/assets/72473316/02fdcee0-002c-40df-8f2d-94091175c585)
-
 
 ✅ The **Maximum Casualties** occurred due to car accidents (**333,485**), accounting for **79.8%** of the Total Casualties, while the Minium occurred in **Other**, amounting to **3,424**.
 
