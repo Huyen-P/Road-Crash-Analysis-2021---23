@@ -56,7 +56,6 @@ Finally, I translate all the insights into an interactive Tableau Public dashboa
 
 ### 05 - Insights from SQL query (following to the KPIs)
 ✅ The **Total Casualties** occurring post the accident amount to **417883**.
-![total_casualties](https://github.com/Huyen-P/UK-Road-Crash-Analysis-2019-2022/assets/72473316/02fdcee0-002c-40df-8f2d-94091175c585)
 ```SQL
 SELECT SUM(number_of_casualties) AS CY_Casualties
 FROM [UK-Road-Crash-DB] .. uk_road_crash
