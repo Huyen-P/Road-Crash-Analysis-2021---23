@@ -1,4 +1,4 @@
-![carbon](https://github.com/Huyen-P/UK-Road-Crash-Analysis-2019-2022/assets/72473316/b608a203-2d7f-4565-84a3-e600ed878174)![UK_Road_Crash_Analysis (1)](https://github.com/Huyen-P/UK-Road-Crash-Analysis-2019-2022/assets/72473316/1c6f2c17-4bdd-4d79-9bbb-7491abd708eb)
+![UK_Road_Crash_Analysis (1)](https://github.com/Huyen-P/UK-Road-Crash-Analysis-2019-2022/assets/72473316/1c6f2c17-4bdd-4d79-9bbb-7491abd708eb)
 **Period of time: from 2019 to 2022**
 
 ### 01 - INTRODUCTION
@@ -53,7 +53,8 @@ Finally, I translate all the insights into an interactive Tableau Public dashboa
 
 ### 05 - Insights from SQL query (following to the KPIs)
 ✅ The **Total Casualties** occurring post the accident amount to **417883**.
-https://carbon.now.sh/?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=dracula-pro&wt=none&l=sql&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=18px&lh=133%25&si=false&es=2x&wm=false&code=SELECT%2520SUM%28number_of_casualties%29%2520AS%2520CY_Casualties%250AFROM%2520%255BUK-Road-Crash-DB%255D%2520..%2520uk_road_crash
+![total_casualties](https://github.com/Huyen-P/UK-Road-Crash-Analysis-2019-2022/assets/72473316/02fdcee0-002c-40df-8f2d-94091175c585)
+
 
 ✅ The **Maximum Casualties** occurred due to car accidents (**333,485**), accounting for **79.8%** of the Total Casualties, while the Minium occurred in **Other**, amounting to **3,424**.
 
