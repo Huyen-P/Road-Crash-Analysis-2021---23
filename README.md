@@ -3,7 +3,8 @@
 **Period of time: from 2019 to 2022**
 ### 01 - INTRODUCTION
 This repository contains the datasource, an EDA SQL script, a data cleaning SQL script and an interactive Tableau workbook for visulization.
-Link to the Tableau dashboard
+The datasource has **307.973 rows** and **19 columns**.
+Link to the [Tableau dashboard](https://www.example.com](https://public.tableau.com/app/profile/huyen.phan5825/viz/RoadAccidentDashboard_16962422435460/Dashboard1)
 
 ### 02- REQUIREMENTS
 **Initial requirements**: 
@@ -50,8 +51,9 @@ I conducted analysis and visualization simultaneously to grasp insights quickly,
 
 Finally, I translate all the insights into an interactive Tableau Public dashboard, enabling users to engage with the data.
 
-### 05 - Insights (following to the KPIs)
+### 05 - Insights from SQL query (following to the KPIs)
 ✅ The **Total Casualties** occurring post the accident amount to **417883**.
+![total_casualties](https://github.com/Huyen-P/UK-Road-Crash-Analysis-2019-2022/assets/72473316/be74a6cd-838d-43fb-a5e9-62abf626dfbe)
 
 ✅ The **Maximum Casualties** occurred due to car accidents (**333,485**), accounting for **79.8%** of the Total Casualties, while the Minium occurred in **Other**, amounting to **3,424**.
 
