@@ -24,4 +24,6 @@ Clients want to create a UK Road Crash dashboard for the years from 2019 to 2022
 
 ### TOOL USED
 📌 **SQL Microsoft Server** for EDA and Data Cleaning Process.
+
 📌 **Tableau Desktop** for Data Visualization in parallel with Data Analysis.
+
