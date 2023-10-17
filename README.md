@@ -1,6 +1,6 @@
-![UK_Road_Crash_Analysis](https://github.com/Huyen-P/UK-Road-Crash-Analysis-2019-2022/assets/72473316/cee266e4-eff9-45fd-a4d4-5c673c1ba029)
-
+![UK_Road_Crash_Analysis (1)](https://github.com/Huyen-P/UK-Road-Crash-Analysis-2019-2022/assets/72473316/1c6f2c17-4bdd-4d79-9bbb-7491abd708eb)
 **Period of time: from 2019 to 2022**
+
 ### 01 - INTRODUCTION
 This repository contains the datasource, an EDA SQL script, a data cleaning SQL script and an interactive Tableau workbook for visulization.
 The datasource has **307.973 rows** and **19 columns**.
