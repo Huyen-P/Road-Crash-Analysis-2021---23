@@ -1,4 +1,4 @@
-![UK_Road_Crash_Analysis (1)](https://github.com/Huyen-P/UK-Road-Crash-Analysis-2019-2022/assets/72473316/1c6f2c17-4bdd-4d79-9bbb-7491abd708eb)
+![UK_Road_Crash_Analysis](https://github.com/Huyen-P/UK-Road-Crash-Analysis-2019-2022/assets/72473316/b5010b86-6aa6-45fd-962d-c2d3cff633fe)
 
 **Period of time: from 2019 to 2022**
 
