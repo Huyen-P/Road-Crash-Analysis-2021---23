@@ -23,5 +23,5 @@ Clients want to create a UK Road Crash dashboard for the years from 2019 to 2022
 📌 Relation between Casualties by Area/ Location & by Day/ Night.
 
 ### TOOL USED
-1. SQL for EDA and Data Cleaning Process.
-2. Tableau for Data Visualization in parallel with Data Analysis.
+📌 **SQL Microsoft Server** for EDA and Data Cleaning Process.
+📌 **Tableau Desktop** for Data Visualization in parallel with Data Analysis.
