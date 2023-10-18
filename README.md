@@ -241,4 +241,5 @@ ORDER BY Total_Casualties DESC
 ```
 - Result: 
 
-![image](https://github.com/Huyen-P/UK-Road-Crash-Analysis/assets/72473316/5905ffaf-e6da-4442-a2f3-bf7a8517cf74)
+![image](https://github.com/Huyen-P/UK-Road-Crash-Analysis/assets/72473316/b97ec55f-57e8-4462-8b59-73a21fa4b326)
+
