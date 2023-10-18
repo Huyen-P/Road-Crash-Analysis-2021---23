@@ -10,9 +10,11 @@
 - Link to the [Tableau dashboard](https://public.tableau.com/app/profile/huyen.phan5825/viz/RoadAccidentDashboard_16962422435460/Dashboard1)
 
 ### 02- REQUIREMENTS
-**Initial requirements**: 
+- **Initial requirements**: 
 
-Clients want to create a UK Road Crash dashboard for the years from 2019 to 2022 so that they can have the following insights with the hope that they can minimize the loss of lives.
+Clients want to create a UK Road Crash dashboard for the years from 2021 to 2022 so that they can have the following insights with the hope that they can minimize the loss of lives.
+
+- **KPIs**
 
 📌 Total Casualties, categorized into levels of accident severity, which took place after the accident per year
 
@@ -34,23 +36,28 @@ Clients want to create a UK Road Crash dashboard for the years from 2019 to 2022
 - **Tableau Desktop** for Data Visualization in parallel with Data Analysis.
 
 ### 04 - STEPS
-**EDA**
+**Step 1 - Data Cleaning by Excel**
 
-I started with exploratory data analysis to deeper understand about the data patterns, inconsistences and potential insights. This step drives effective decision-making, aids in data cleaning, and informs appropriate analysis methods for enhanced project outcomes.
+The raw csv file contained inconsistent data type within column "accident_date", which need to be fixed by using Excel.
 
-**Data Cleaning**
+**Step 2 - EDA using SQL**
+
+I started with exploratory data analysis to deeper understand about the data patterns, inconsistences and potential insights. 
+This step drives effective decision-making, aids in data cleaning, and informs appropriate analysis methods for enhanced project outcomes.
+
+**Step 3 - Data Cleaning using SQL**
 
 This step involves getting rid of data inconsistencies, errors, and duplicates, ensuring the accuracy and reliability of the data I'm using for subsequent analysis.
 
-**Data Processing**
+**Step 4 - Data Processing**
 
 This step contains generating additional columns by organizing, sorting, and filtering the data to derive valuable insights.
 
-**Data Analysing and Data Visualizing**
+**Step 5 - Data Analyzing and Data Visualizing**
 
 I conducted analysis and visualization simultaneously to grasp insights quickly, validate results, communicate effectively, and refine hypotheses iteratively. It aids in comprehensive understanding and facilitates efficient data exploration and interpretation.
 
-**Dashboard Building** 
+**Step 6 - Dashboard Building** 
 
 Finally, I translate all the insights into an interactive Tableau Public dashboard, enabling users to engage with the data.
 
