@@ -68,9 +68,9 @@ Note: Audience can easily find the completed EDA Script in the attached file nam
 ✅  The **Total Casualties** occurring post the accident amount to **417.883** and was categorized into 3 groups of the level of accident severity including **Slight**, **Serious** and **Fatal** with retrieved numbers are **351.436**, **59.312**,**7.135**; respectively.
 ```SQL
 SELECT	SUM(number_of_casualties) AS "Total Casualties",  COUNT(DISTINCT accident_index) AS "Total Accidents",
-		    SUM(CASE WHEN accident_severity = 'Slight' THEN number_of_casualties END) AS "Total Slight Casualties",
-		    SUM(CASE WHEN accident_severity = 'Serious' THEN number_of_casualties END) AS "Total Serious Casualties",
-		    SUM(CASE WHEN accident_severity = 'Fatal' THEN number_of_casualties END) AS "Total Fatal Casualties"
+	SUM(CASE WHEN accident_severity = 'Slight' THEN number_of_casualties END) AS "Total Slight Casualties",
+	SUM(CASE WHEN accident_severity = 'Serious' THEN number_of_casualties END) AS "Total Serious Casualties",
+	SUM(CASE WHEN accident_severity = 'Fatal' THEN number_of_casualties END) AS "Total Fatal Casualties"
 FROM [UK-Road-Crash-DB]..uk_road_crashSELECT SUM(number_of_casualties) AS CY_Casualties
 FROM [UK-Road-Crash-DB] .. uk_road_crash
 ```
@@ -96,12 +96,12 @@ GROUP BY YEAR(accident_date)
 **Severity Level: Slight**
 ```SQL
 SELECT	YEAR(accident_date) AS "Year", 
-		    SUM(CASE WHEN accident_severity = 'Slight' AND vehicle_type LIKE 'Agricultural%'THEN number_of_casualties END) AS "Slight Casualties by Agricultural Vehicle",
-		    SUM(CASE WHEN accident_severity = 'Slight' AND vehicle_type LIKE 'Bus%' OR vehicle_type LIKE 'bus%' THEN number_of_casualties END) AS "Slight Casualties by Bus",
-		    SUM(CASE WHEN accident_severity = 'Slight' AND vehicle_type LIKE 'Car%' OR vehicle_type LIKE 'car%' THEN number_of_casualties END) AS "Slight Casualties by Car",
-		    SUM(CASE WHEN accident_severity = 'Slight' AND vehicle_type LIKE 'Motorcycle%' THEN number_of_casualties END) AS "Slight Casualties by Motorcycle",
-		    SUM(CASE WHEN accident_severity = 'Slight' AND vehicle_type LIKE 'Other%' OR vehicle_type LIKE 'Pedal%'OR vehicle_type LIKE 'missing%' OR vehicle_type LIKE 'horse%'THEN number_of_casualties END)           AS "Slight Casualties by Others",
-		    SUM(CASE WHEN accident_severity = 'Slight' AND vehicle_type LIKE 'Goods%' THEN number_of_casualties END) AS "Slight Casualties by Van"
+	SUM(CASE WHEN accident_severity = 'Slight' AND vehicle_type LIKE 'Agricultural%'THEN number_of_casualties END) AS "Slight Casualties by Agricultural Vehicle",
+	SUM(CASE WHEN accident_severity = 'Slight' AND vehicle_type LIKE 'Bus%' OR vehicle_type LIKE 'bus%' THEN number_of_casualties END) AS "Slight Casualties by Bus",
+	SUM(CASE WHEN accident_severity = 'Slight' AND vehicle_type LIKE 'Car%' OR vehicle_type LIKE 'car%' THEN number_of_casualties END) AS "Slight Casualties by Car",
+	SUM(CASE WHEN accident_severity = 'Slight' AND vehicle_type LIKE 'Motorcycle%' THEN number_of_casualties END) AS "Slight Casualties by Motorcycle",
+	SUM(CASE WHEN accident_severity = 'Slight' AND vehicle_type LIKE 'Other%' OR vehicle_type LIKE 'Pedal%'OR vehicle_type LIKE 'missing%' OR vehicle_type LIKE 'horse%'THEN number_of_casualties END)           AS "Slight Casualties by Others",
+	SUM(CASE WHEN accident_severity = 'Slight' AND vehicle_type LIKE 'Goods%' THEN number_of_casualties END) AS "Slight Casualties by Van"
 FROM [UK-Road-Crash-DB]..uk_road_crash
 GROUP BY YEAR(accident_date)
 ```
@@ -111,12 +111,12 @@ GROUP BY YEAR(accident_date)
 **Severity Level: Serious**
 ```SQL
 SELECT	YEAR(accident_date) AS "Year", 
-		    SUM(CASE WHEN accident_severity = 'Serious' AND vehicle_type LIKE 'Agricultural%'THEN number_of_casualties END) AS "Serious Casualties by Agricultural Vehicle",
-		    SUM(CASE WHEN accident_severity = 'Serious' AND vehicle_type LIKE 'Bus%' OR vehicle_type LIKE 'bus%' THEN number_of_casualties END) AS "Serious Casualties by Bus",
-		    SUM(CASE WHEN accident_severity = 'Serious' AND vehicle_type LIKE 'Car%' OR vehicle_type LIKE 'car%' THEN number_of_casualties END) AS "Serious Casualties by Car",
-		    SUM(CASE WHEN accident_severity = 'Serious' AND vehicle_type LIKE 'Motorcycle%' THEN number_of_casualties END) AS "Serious Casualties by Motorcycle",
-		    SUM(CASE WHEN accident_severity = 'Serious' AND vehicle_type LIKE 'Other%' OR vehicle_type LIKE 'Pedal%'OR vehicle_type LIKE 'missing%' OR vehicle_type LIKE 'horse%'THEN number_of_casualties END)          AS "Serious Casualties by Others",
-		    SUM(CASE WHEN accident_severity = 'Serious' AND vehicle_type LIKE 'Goods%' THEN number_of_casualties END) AS "Serious Casualties by Van"
+	SUM(CASE WHEN accident_severity = 'Serious' AND vehicle_type LIKE 'Agricultural%'THEN number_of_casualties END) AS "Serious Casualties by Agricultural Vehicle",
+	SUM(CASE WHEN accident_severity = 'Serious' AND vehicle_type LIKE 'Bus%' OR vehicle_type LIKE 'bus%' THEN number_of_casualties END) AS "Serious Casualties by Bus",
+	SUM(CASE WHEN accident_severity = 'Serious' AND vehicle_type LIKE 'Car%' OR vehicle_type LIKE 'car%' THEN number_of_casualties END) AS "Serious Casualties by Car",
+	SUM(CASE WHEN accident_severity = 'Serious' AND vehicle_type LIKE 'Motorcycle%' THEN number_of_casualties END) AS "Serious Casualties by Motorcycle",
+	SUM(CASE WHEN accident_severity = 'Serious' AND vehicle_type LIKE 'Other%' OR vehicle_type LIKE 'Pedal%'OR vehicle_type LIKE 'missing%' OR vehicle_type LIKE 'horse%'THEN number_of_casualties END)          AS "Serious Casualties by Others",
+	SUM(CASE WHEN accident_severity = 'Serious' AND vehicle_type LIKE 'Goods%' THEN number_of_casualties END) AS "Serious Casualties by Van"
 FROM [UK-Road-Crash-DB]..uk_road_crash
 GROUP BY YEAR(accident_date)
 ```
@@ -126,12 +126,12 @@ GROUP BY YEAR(accident_date)
 **Severity Level: Fatal**
 ```SQL
 SELECT	YEAR(accident_date) AS "Year", 
-		    SUM(CASE WHEN accident_severity = 'Fatal' AND vehicle_type LIKE 'Agricultural%'THEN number_of_casualties END) AS "Fatal Casualties by Agricultural Vehicle",
-		    SUM(CASE WHEN accident_severity = 'Fatal' AND vehicle_type LIKE 'Bus%' OR vehicle_type LIKE 'bus%' THEN number_of_casualties END) AS "Fatal Casualties by Bus",
-		    SUM(CASE WHEN accident_severity = 'Fatal' AND vehicle_type LIKE 'Car%' OR vehicle_type LIKE 'car%' THEN number_of_casualties END) AS "Fatal Casualties by Car",
-		    SUM(CASE WHEN accident_severity = 'Fatal' AND vehicle_type LIKE 'Motorcycle%' THEN number_of_casualties END) AS "Fatal Casualties by Motorcycle",
-		    SUM(CASE WHEN accident_severity = 'Fatal' AND vehicle_type LIKE 'Other%' OR vehicle_type LIKE 'Pedal%'OR vehicle_type LIKE 'missing%' OR vehicle_type LIKE 'horse%'THEN number_of_casualties END)          AS "Fatal Casualties by Others",
-		    SUM(CASE WHEN accident_severity = 'Fatal' AND vehicle_type LIKE 'Goods%' THEN number_of_casualties END) AS "Fatal Casualties by Van"
+	SUM(CASE WHEN accident_severity = 'Fatal' AND vehicle_type LIKE 'Agricultural%'THEN number_of_casualties END) AS "Fatal Casualties by Agricultural Vehicle",
+	SUM(CASE WHEN accident_severity = 'Fatal' AND vehicle_type LIKE 'Bus%' OR vehicle_type LIKE 'bus%' THEN number_of_casualties END) AS "Fatal Casualties by Bus",
+	SUM(CASE WHEN accident_severity = 'Fatal' AND vehicle_type LIKE 'Car%' OR vehicle_type LIKE 'car%' THEN number_of_casualties END) AS "Fatal Casualties by Car",
+	SUM(CASE WHEN accident_severity = 'Fatal' AND vehicle_type LIKE 'Motorcycle%' THEN number_of_casualties END) AS "Fatal Casualties by Motorcycle",
+	SUM(CASE WHEN accident_severity = 'Fatal' AND vehicle_type LIKE 'Other%' OR vehicle_type LIKE 'Pedal%'OR vehicle_type LIKE 'missing%' OR vehicle_type LIKE 'horse%'THEN number_of_casualties END)          AS "Fatal Casualties by Others",
+	SUM(CASE WHEN accident_severity = 'Fatal' AND vehicle_type LIKE 'Goods%' THEN number_of_casualties END) AS "Fatal Casualties by Van"
 FROM [UK-Road-Crash-DB]..uk_road_crash
 GROUP BY YEAR(accident_date)
 ```
@@ -141,12 +141,12 @@ GROUP BY YEAR(accident_date)
 ✅ Total Casualties with respect to vehicle type per year.
 ```SQL
 SELECT	YEAR(accident_date) AS "Year", 
-		    SUM(CASE WHEN vehicle_type LIKE 'Agricultural%'THEN number_of_casualties END) AS "Total Casualties by Agricultural Vehicle",
-		    SUM(CASE WHEN vehicle_type LIKE 'Bus%' OR vehicle_type LIKE 'bus%' THEN number_of_casualties END) AS "Total Casualties by Bus",
-		    SUM(CASE WHEN vehicle_type LIKE 'Car%' OR vehicle_type LIKE 'car%' THEN number_of_casualties END) AS "Total Casualties by Car",
-		    SUM(CASE WHEN vehicle_type LIKE 'Motorcycle%' THEN number_of_casualties END) AS "Total Casualties by Motorcycle",
-		    SUM(CASE WHEN vehicle_type LIKE 'Other%' OR vehicle_type LIKE 'Pedal%'OR vehicle_type LIKE 'missing%' OR vehicle_type LIKE 'horse%'THEN number_of_casualties END) AS "Total Casualties by Others",
-		    SUM(CASE WHEN vehicle_type LIKE 'Goods%' THEN number_of_casualties END) AS "Total Casualties by Van"
+	SUM(CASE WHEN vehicle_type LIKE 'Agricultural%'THEN number_of_casualties END) AS "Total Casualties by Agricultural Vehicle",
+	SUM(CASE WHEN vehicle_type LIKE 'Bus%' OR vehicle_type LIKE 'bus%' THEN number_of_casualties END) AS "Total Casualties by Bus",
+	SUM(CASE WHEN vehicle_type LIKE 'Car%' OR vehicle_type LIKE 'car%' THEN number_of_casualties END) AS "Total Casualties by Car",
+	SUM(CASE WHEN vehicle_type LIKE 'Motorcycle%' THEN number_of_casualties END) AS "Total Casualties by Motorcycle",
+	SUM(CASE WHEN vehicle_type LIKE 'Other%' OR vehicle_type LIKE 'Pedal%'OR vehicle_type LIKE 'missing%' OR vehicle_type LIKE 'horse%'THEN number_of_casualties END) AS "Total Casualties by Others",
+	SUM(CASE WHEN vehicle_type LIKE 'Goods%' THEN number_of_casualties END) AS "Total Casualties by Van"
 FROM [UK-Road-Crash-DB]..uk_road_crash
 GROUP BY YEAR(accident_date)
 ```
@@ -169,13 +169,13 @@ ORDER BY "Year"
 
 ```SQL
 SELECT	YEAR(accident_date) AS "Year",
-		    SUM(CASE WHEN road_type LIKE 'Single%' THEN number_of_casualties END) AS "Single Carriagetway",
-		    SUM(CASE WHEN road_type LIKE 'Dual%' THEN number_of_casualties END) AS "Dual Carriagetway",
-		    SUM(CASE WHEN road_type LIKE 'Roundabout%' THEN number_of_casualties END) AS "Roundabout",
-		    SUM(CASE WHEN road_type LIKE 'one%' THEN number_of_casualties END) AS "One way street",
-		    SUM(CASE WHEN road_type LIKE 'Slip%' THEN number_of_casualties END) AS "Slip road",
-		    SUM(CASE WHEN road_type IS NULL THEN number_of_casualties END) AS "Null",
-		    SUM(number_of_casualties) AS Total_Casualties
+	SUM(CASE WHEN road_type LIKE 'Single%' THEN number_of_casualties END) AS "Single Carriagetway",
+	SUM(CASE WHEN road_type LIKE 'Dual%' THEN number_of_casualties END) AS "Dual Carriagetway",
+	SUM(CASE WHEN road_type LIKE 'Roundabout%' THEN number_of_casualties END) AS "Roundabout",
+	SUM(CASE WHEN road_type LIKE 'one%' THEN number_of_casualties END) AS "One way street",
+	SUM(CASE WHEN road_type LIKE 'Slip%' THEN number_of_casualties END) AS "Slip road",
+	SUM(CASE WHEN road_type IS NULL THEN number_of_casualties END) AS "Null",
+	SUM(number_of_casualties) AS Total_Casualties
 FROM [UK-Road-Crash-DB]..uk_road_crash
 GROUP BY YEAR(accident_date)
 ```
@@ -186,11 +186,11 @@ GROUP BY YEAR(accident_date)
 
 ```SQL
 SELECT	YEAR(accident_date) AS "Year",
-		    ROUND(SUM(CASE WHEN road_surface_conditions LIKE 'Dry%' THEN number_of_casualties END)/SUM(number_of_casualties)*100,2) AS "Dry",
-		    ROUND(SUM(CASE WHEN road_surface_conditions LIKE 'Frost%' OR road_surface_conditions LIKE 'Snow%' THEN number_of_casualties END)/SUM(number_of_casualties)*100,2) AS "Frost/Snow",
-		    ROUND(SUM(CASE WHEN road_surface_conditions LIKE 'Flood%' OR road_surface_conditions LIKE 'Wet%' THEN number_of_casualties END)/SUM(number_of_casualties)*100,2) AS "Wet",
-		    ROUND(SUM(CASE WHEN road_surface_conditions IS NULL THEN number_of_casualties END)/SUM(number_of_casualties)*100,2) AS "Unknown",
-		    SUM(number_of_casualties) AS Total_Casualties
+	ROUND(SUM(CASE WHEN road_surface_conditions LIKE 'Dry%' THEN number_of_casualties END)/SUM(number_of_casualties)*100,2) AS "Dry",
+	ROUND(SUM(CASE WHEN road_surface_conditions LIKE 'Frost%' OR road_surface_conditions LIKE 'Snow%' THEN number_of_casualties END)/SUM(number_of_casualties)*100,2) AS "Frost/Snow",
+	ROUND(SUM(CASE WHEN road_surface_conditions LIKE 'Flood%' OR road_surface_conditions LIKE 'Wet%' THEN number_of_casualties END)/SUM(number_of_casualties)*100,2) AS "Wet",
+	ROUND(SUM(CASE WHEN road_surface_conditions IS NULL THEN number_of_casualties END)/SUM(number_of_casualties)*100,2) AS "Unknown",
+	SUM(number_of_casualties) AS Total_Casualties
 FROM [UK-Road-Crash-DB]..uk_road_crash
 GROUP BY YEAR(accident_date)
 ```
@@ -202,8 +202,8 @@ GROUP BY YEAR(accident_date)
 
 ```SQL
 SELECT	YEAR(accident_date) AS "Year",
-		ROUND(SUM(CASE WHEN urban_or_rural_area = 'Rural' THEN number_of_casualties END)/SUM(number_of_casualties)*100,2) AS "PCT_Rural",
-		ROUND(SUM(CASE WHEN urban_or_rural_area = 'Urban' THEN number_of_casualties END)/SUM(number_of_casualties)*100,2) AS "PCT_Urban"
+	ROUND(SUM(CASE WHEN urban_or_rural_area = 'Rural' THEN number_of_casualties END)/SUM(number_of_casualties)*100,2) AS "PCT_Rural",
+	ROUND(SUM(CASE WHEN urban_or_rural_area = 'Urban' THEN number_of_casualties END)/SUM(number_of_casualties)*100,2) AS "PCT_Urban"
 FROM [UK-Road-Crash-DB]..uk_road_crash
 GROUP BY Year(accident_date)
 ```
@@ -215,8 +215,8 @@ GROUP BY Year(accident_date)
 
 ```SQL
 SELECT	YEAR(accident_date) AS "Year",
-		ROUND(SUM(CASE WHEN light_conditions LIKE 'Day%' THEN number_of_casualties END)/SUM(number_of_casualties)*100,2) AS "PCT_Day",
-		ROUND(SUM(CASE WHEN light_conditions NOT LIKE 'Day%' THEN number_of_casualties END)/SUM(number_of_casualties)*100,2) AS "PCT_Night"
+	ROUND(SUM(CASE WHEN light_conditions LIKE 'Day%' THEN number_of_casualties END)/SUM(number_of_casualties)*100,2) AS "PCT_Day",
+	ROUND(SUM(CASE WHEN light_conditions NOT LIKE 'Day%' THEN number_of_casualties END)/SUM(number_of_casualties)*100,2) AS "PCT_Night"
 FROM [UK-Road-Crash-DB]..uk_road_crash
 GROUP BY Year(accident_date)
 ```
