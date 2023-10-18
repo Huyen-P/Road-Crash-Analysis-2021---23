@@ -239,6 +239,6 @@ FROM [UK-Road-Crash-DB]..uk_road_crash
 GROUP BY local_authority
 ORDER BY Total_Casualties DESC
 ```
--Result: 
+- Result: 
 
 ![image](https://github.com/Huyen-P/UK-Road-Crash-Analysis/assets/72473316/5905ffaf-e6da-4442-a2f3-bf7a8517cf74)
