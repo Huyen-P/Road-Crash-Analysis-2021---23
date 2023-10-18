@@ -90,6 +90,7 @@ FROM [UK-Road-Crash-DB]..uk_road_crash
 GROUP BY YEAR(accident_date)
 ```
 - Result
+
 ![EDA_05](https://github.com/Huyen-P/UK-Road-Crash-Analysis/assets/72473316/d378b42d-1f8d-48c0-9ff9-483b1249b2de)
 
 ✅ Total Casualties with respect to each accident severity and total casualties by each type of vehicle per year.
@@ -106,6 +107,7 @@ FROM [UK-Road-Crash-DB]..uk_road_crash
 GROUP BY YEAR(accident_date)
 ```
 - Result:
+
 ![EDA_09](https://github.com/Huyen-P/UK-Road-Crash-Analysis/assets/72473316/48e07783-c2a2-4626-a5bf-ed0411b5705e)
 
 **Severity Level: Serious**
@@ -121,6 +123,7 @@ FROM [UK-Road-Crash-DB]..uk_road_crash
 GROUP BY YEAR(accident_date)
 ```
 - Result:
+
 ![EDA_10](https://github.com/Huyen-P/UK-Road-Crash-Analysis/assets/72473316/0f34b117-92fd-40b2-8743-b2c7bfefb9b7)
 
 **Severity Level: Fatal**
@@ -163,6 +166,7 @@ GROUP BY Year(accident_date), DATENAME(MONTH, accident_date)
 ORDER BY "Year"
 ```
 - Result:
+
   ![image](https://github.com/Huyen-P/UK-Road-Crash-Analysis/assets/72473316/3827a4d3-c424-4201-ab24-804caff0462f)
 
 ✅ Total Casualties by Road type.
@@ -180,6 +184,7 @@ FROM [UK-Road-Crash-DB]..uk_road_crash
 GROUP BY YEAR(accident_date)
 ```
 - Result
+
 ![image](https://github.com/Huyen-P/UK-Road-Crash-Analysis/assets/72473316/2b48d2ff-c81b-45b3-ab01-b7aa8e38f854)
 
 ✅ Distribution of total casualties by road surface condition
@@ -195,6 +200,7 @@ FROM [UK-Road-Crash-DB]..uk_road_crash
 GROUP BY YEAR(accident_date)
 ```
 - Result:
+
   ![image](https://github.com/Huyen-P/UK-Road-Crash-Analysis/assets/72473316/4cb4fec3-3bba-4664-acc6-b3f56d62a203)
 
 
@@ -208,6 +214,7 @@ FROM [UK-Road-Crash-DB]..uk_road_crash
 GROUP BY Year(accident_date)
 ```
 - Result:
+  
 ![image](https://github.com/Huyen-P/UK-Road-Crash-Analysis/assets/72473316/f93b540b-31da-46fa-b521-6a028adec66b)
 
 
@@ -221,6 +228,7 @@ FROM [UK-Road-Crash-DB]..uk_road_crash
 GROUP BY Year(accident_date)
 ```
 - Result:
+
 ![image](https://github.com/Huyen-P/UK-Road-Crash-Analysis/assets/72473316/166246c7-48dc-4b4f-84ef-0c5450be4d97)
 
 ✅ Relation between Casualtiesby by Location.
@@ -232,4 +240,5 @@ GROUP BY local_authority
 ORDER BY Total_Casualties DESC
 ```
 -Result: 
+
 ![image](https://github.com/Huyen-P/UK-Road-Crash-Analysis/assets/72473316/5905ffaf-e6da-4442-a2f3-bf7a8517cf74)
