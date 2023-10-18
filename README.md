@@ -12,7 +12,7 @@
 ### 02- REQUIREMENTS
 - **Initial requirements**: 
 
-Clients want to create a UK Road Crash dashboard for the years from 2021 to 2022 so that they can have the following insights with the hope that they can minimize the loss of lives.
+Clients want to create a UK Road Crash dashboard for the years from 2021 to 2022 so that they can have the following insights with the hope in minimizing the loss of lives.
 
 - **KPIs**
 
