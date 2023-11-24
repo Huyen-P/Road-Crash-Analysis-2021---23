@@ -1,4 +1,4 @@
-![UK_Road_Crash_Analysis](https://github.com/Huyen-P/UK-Road-Crash-Analysis-2019-2022/assets/72473316/b5010b86-6aa6-45fd-962d-c2d3cff633fe)
+**UK Road Crash Analysis**
 
 **Period of time: from 2021 to 2022**
 
