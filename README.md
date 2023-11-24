@@ -9,7 +9,12 @@
 
 - Link to the [Tableau dashboard](https://public.tableau.com/app/profile/huyen.phan5825/viz/RoadAccidentDashboard_16962422435460/Dashboard1)
 
+![image](https://github.com/Huyen-P/UK-Road-Crash-Analysis/assets/72473316/892d9408-d8e9-4187-9b4f-df0a81b3a00c)
+
+
 ### 02- REQUIREMENTS
+<details><summary>Details</summary>
+<p>
 - **Initial requirements**: 
 
 Clients want to create a UK Road Crash dashboard for the years from 2021 to 2022 so that they can have the following insights with the hope in minimizing the loss of lives.
@@ -30,12 +35,26 @@ Clients want to create a UK Road Crash dashboard for the years from 2021 to 2022
 
 📌 Relation between Casualties by Area, Location & by Day/ Night.
 
+</p>
+</details> 
+
 ### 03 - TOOL USED
+
+<details><summary>Details</summary>
+<p>
+	
 - **SQL Microsoft Server** for EDA and Data Cleaning Process.
 
 - **Tableau Desktop** for Data Visualization in parallel with Data Analysis.
 
+</p>
+</details> 
+
 ### 04 - STEPS
+
+<details><summary>Details</summary>
+<p>
+	
 **Step 1 - Data Cleaning by Excel**
 
 The raw csv file contained inconsistent data type within column "accident_date", which need to be fixed by using Excel.
@@ -61,7 +80,13 @@ I conducted analysis and visualization simultaneously to grasp insights quickly,
 
 Finally, I translate all the insights into an interactive Tableau Public dashboard, enabling users to engage with the data.
 
+</p>
+</details> 
+
 ### 05 - Insights from SQL EDA Script (associated with each KPIs)
+
+<details><summary>Details</summary>
+<p>
 
 Note: Audience can easily find the completed EDA Script in the attached file name: **[03_UKRoadCrash_SQLQuery_DataCleaningScript.sql](https://github.com/Huyen-P/UK-Road-Crash-Analysis/blob/62e3ed5ce8652eccf505a578e57572986c1147a8/03_UKRoadCrash_SQLQuery_DataCleaningScript.sql)**
 
@@ -243,3 +268,5 @@ ORDER BY Total_Casualties DESC
 
 ![image](https://github.com/Huyen-P/UK-Road-Crash-Analysis/assets/72473316/b97ec55f-57e8-4462-8b59-73a21fa4b326)
 
+</p>
+</details> 
